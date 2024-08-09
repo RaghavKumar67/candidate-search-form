@@ -36,6 +36,29 @@
             box-shadow: none !important;
         }
 
+.tag {
+    display: inline-flex;
+    background-color: #e0f8ff;
+    border-radius: 37px;
+    padding: 2px 12px;
+    margin: 5px;
+    font-size: 14px;
+    margin-top: 14px;
+    padding-top: 0px;
+    align-items: center;
+}
+
+.remove-tag {
+    /* background-color: #ff5c5c; */
+    /* border-radius: 50%; */
+    color: #555555;
+    cursor: pointer;
+    padding: 0px 6px;
+    margin-left: 4px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
         .accordion-item {
                 background-color: #fff;
                 border-top: 1px solid rgba(0, 0, 0, .125) !important;
