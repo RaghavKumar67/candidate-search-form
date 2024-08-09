@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Search Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="mb-m10">
+                    <h5 class="bg-primary px-3 py-2 text-white">Advanced Search
+                    <img src="assets/gear.png" class="fr" width="24" height="24" alt="">
+                </h5>
+                </div>
+                <form accept="" class="bg-border p-4">                  
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                        <label for="key" class="pb-2">Any of the Keywords</label>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input mt-1" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault"><small>Boolean off</small></label>
+                          </div>
+                        </div>
+                        <input type="text" class="form-control" name="keyword" id="keyword" placeholder="Enter Keywords">
+                        <input type="checkbox" name="RememberMe" class="mt-3" > Mark All Keywords as Mandatory
+                    </div>
+    
+                    <div class="mb-2">
+                        <label for="allkey" class="pb-2">All the Keywords</label>
+                        <input type="text" class="form-control" name="keyword1" id="keyword1" placeholder="Enter All Keywords">
+                    </div>
+
+                    
+                    <button type="button" id="showButton" class="btn btn-link d-block px-0">+ Add Exclude Keywords</button>
+
+                    
+
+                    <div class="mb-2" id="hiddenField">
+                        <label for="exkey" class="pb-2">Excluding Keywords</label>
+                        <input type="text" class="form-control" name="keyword2" id="keyword2" placeholder="Enter Excluded Keywords">
+                        <div class="mt-4">
+                        
+                            <div class="col-8 d-flex justify-content-evenly">
+                                <label for="exkey" class="pb-2"><strong>Search in</strong></label>
+                              <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1">Resume</label>
+                              </div>
+                              <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">Key Skills</label>
+                              </div>
+                            </div>
+                          
+                    </div>
+                    </div>
+
+                    <button type="button" id="showButton1" class="btn btn-link d-block px-0">+ Add IT Skills</button>
+
+                    <div class="mb-2" id="hiddenFieldO">
+                        <div class="col-sm-4 pe-3">
+                        <input type="text" class="form-control" name="keyword5" id="keyword5" placeholder="Add IT Skills">
+                        </div>
+                        <div class="col-sm-4">
+                        <input type="text" class="form-control" name="keyword5" id="keyword5" placeholder="Experience">
+                        </div>
+                    </div>
+                    
+
+                    <div class="my-3"><label for="exkey" class="pb-2 pe-3">Total Experience</label>
+                        <div class="col-12 d-flex align-items-baseline">
+                            
+                            <div class="col-sm-4">
+                                <label for="date" class="col-2 col-form-label">From</label>
+                                <input type="number" id="fromdate" name="fromdate" placeholder="Min experience">
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="date" class="col-1 col-form-label">To</label>
+                                <input type="number"  id="todate" name="todate" placeholder="Max experience">
+                            </div>
+                            <label for="date" class="col-1 col-form-label">Years</label>
+                        </div>
+    
+                        </div>
+
+                    <div class="mb-3">
+                        <label for="notice" class="pb-2">Notice Period</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Immediate</option>
+                            <option value="1">30 Days</option>
+                            <option value="2">60 Days</option>
+                            <option value="3">90 Days</option>
+                          </select>
+                    </div>
+
+                    <div class="mb-2"><label for="annual" class="pb-2 pe-3">Annual Salary</label>
+                    <div class="col-8 d-flex justify-content-between align-items-baseline">
+                        
+                        <div class="col-sm-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>INR</option>
+                                <option value="1">Dollar</option>
+                                <option value="2">Euro</option>
+                                <option value="3">Yen</option>
+                              </select>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" name="lakhs" id="lakhs" placeholder="Lakhs">
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" name="thou" id="thou" placeholder="Thousands">
+                        </div>
+                        
+                    </div>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exkey" class="pb-2">Candidate's Current Location</label>
+                        <input type="text" class="form-control" name="loc" id="loc" placeholder="Enter your location">
+                    </div>
+
+                    <div>
+                        <div class="mb-2">
+                            <div class="col-8 d-flex align-items-baseline">
+                                <div class="col-sm-6">
+                                    <label for="exkey" class="pb-2">Also Search in location within</label>
+                                </div>
+                                <div class="col-sm-3">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-8 mt-3 d-flex justify-content-start">
+                                
+                              <div class="custom-control custom-radio custom-control-inline pe-5">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1">and</label>
+                              </div>
+                              <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">or</label>
+                              </div>
+
+                              
+                            </div>
+
+                            <div class="col-12 pt-3">
+                            <select class="form-select ps-1" aria-label="Default select example">
+                                <option selected>Select Locations</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="accordion mt-3" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <strong>Employment Details</strong>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              
+                                <div class="mb-3">
+                                    <label for="notice" class="pb-2">Functional Area</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select Functional Area and Role</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                      </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="notice" class="pb-2">Industry Type</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select Industry</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                      </select>
+                                </div>
+
+                                <div class="mb-3 d-flex justify-content-between align-items-baseline">
+                                    <label for="notice">Employee</label>&nbsp;
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control" name="loc1" id="loc1" placeholder="Your Details">
+                                    </div>
+                                    <div class="col-sm-5">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Current Employer</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                      </select>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 d-flex justify-content-between align-items-baseline">
+                                    <label for="notice">Exclude Emp</label>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control" name="loc2" id="loc2" placeholder="Your Details">
+                                    </div>
+                                    <div class="col-sm-5">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Current Employer</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                      </select>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 d-flex justify-content-between align-items-baseline">
+                                    <label for="notice">Designation</label>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control" name="loc3" id="loc3" placeholder="Your Details">
+                                    </div>
+                                    <div class="col-sm-5">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Current Employer</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                      </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                             <strong> Educational Details</strong>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+
+                                <div class="mb-3">
+                                    <label for="ug" class="pb-2">UG Qualification</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select Qualification</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                      </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="inskety" class="pb-2">Name of Institute</label>
+                                    <input type="text" class="form-control" name="ins" id="ins" placeholder="Enter name of your institute">
+                                </div>
+
+                                <div class="my-3"><label for="exkey1" class="pb-2 pe-3">Year of Passing</label>
+                                    <div class="col-12 d-flex align-items-baseline">
+                                        
+                                        <div class="col-sm-4">
+                                            <label for="date" class="col-2 col-form-label">From</label>
+                                            <input type="date" id="fromdate1" name="fromdate1" placeholder="Min experience">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label for="date" class="col-1 col-form-label">To</label>
+                                            <input type="date"  id="todate1" name="todate1" placeholder="Max experience">
+                                        </div>
+                                        
+                                    </div>
+                
+                                </div>
+
+                                <div class="col-6 mt-3 d-flex justify-content-center">
+                                
+                                    <div class="custom-control custom-radio custom-control-inline pe-5">
+                                      <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input">
+                                      <label class="custom-control-label" for="customRadioInline3">and</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                      <input type="radio" id="customRadioInline4" name="customRadioInline4" class="custom-control-input">
+                                      <label class="custom-control-label" for="customRadioInline4">or</label>
+                                    </div>
+      
+                                    
+                                  </div>
+
+                                <!-- PG Qualification -->
+                                <div class="my-3">
+                                    <label for="pg" class="pb-2">PG Qualification</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select Qualification</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                      </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="inskety2" class="pb-2">Name of Institute</label>
+                                    <input type="text" class="form-control" name="ins2" id="ins2" placeholder="Enter name of your institute">
+                                </div>
+
+                                <div class="my-3"><label for="exkey3" class="pb-2 pe-3">Year of Passing</label>
+                                    <div class="col-12 d-flex align-items-baseline">
+                                        
+                                        <div class="col-sm-4">
+                                            <label for="date" class="col-2 col-form-label">From</label>
+                                            <input type="date" id="fromdate3" name="fromdate3" placeholder="Min experience">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label for="date" class="col-1 col-form-label">To</label>
+                                            <input type="date"  id="todate3" name="todate3" placeholder="Max experience">
+                                        </div>
+                                        
+                                    </div>
+                
+                                </div>
+
+                                <div class="col-6 mt-3 d-flex justify-content-center">
+                                
+                                    <div class="custom-control custom-radio custom-control-inline pe-5">
+                                      <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input">
+                                      <label class="custom-control-label" for="customRadioInline5">and</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                      <input type="radio" id="customRadioInline6" name="customRadioInline6" class="custom-control-input">
+                                      <label class="custom-control-label" for="customRadioInline6">or</label>
+                                    </div>
+      
+                                    
+                                  </div>
+
+                                  <!-- PHD Qualification -->
+                                  <div class="my-3">
+                                    <label for="phd" class="pb-2">PhD Qualification</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select Qualification</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                      </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="inskety3" class="pb-2">Name of Institute</label>
+                                    <input type="text" class="form-control" name="ins3" id="ins3" placeholder="Enter name of your institute">
+                                </div>
+
+                                <div class="my-3"><label for="exkey4" class="pb-2 pe-3">Year of Passing</label>
+                                    <div class="col-12 d-flex align-items-baseline">
+                                        
+                                        <div class="col-sm-4">
+                                            <label for="date" class="col-2 col-form-label">From</label>
+                                            <input type="date" id="fromdate4" name="fromdate4" placeholder="Min experience">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label for="date" class="col-1 col-form-label">To</label>
+                                            <input type="date"  id="todate4" name="todate4" placeholder="Max experience">
+                                        </div>
+                                        
+                                    </div>
+                
+                                </div>
+                                
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <strong>Diversity and Additional Details</strong>
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <h6 class="pt-3">Diversity Details</h6>
+                                <div class="mb-3 pt-2">
+                                    <label for="notice" class="pb-2">Gender</label>
+                                
+                                    <div class="hungry d-flex">
+                                        <div class="selection pe-3">
+                                        <input id="pizza" name="hungry" type="radio">
+                                        <label for="pizza">All Candidates</label>
+                                        </div>
+                                        <div class="selection pe-3">
+                                        <input id="burger" name="hungry" type="radio">
+                                        <label for="burger">Male Candidates</label>
+                                        </div>
+                                        <div class="selection">
+                                        <input id="bread" name="hungry" type="radio">
+                                        <label for="bread">Female Candidates</label>
+                                        </div>
+                                    </div>
+
+                                    <input type="checkbox" name="person"> Person with Disabilities Only
+
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="exkey" class="pb-2">Candidate Category</label>
+                                    <input type="text" class="form-control" name="cat" id="cat" placeholder="Add candidate category">
+                                </div>
+
+                                <div class="my-3"><label for="exkey" class="pb-2 pe-3">Candidate Age</label>
+                                    <div class="col-12 d-flex align-items-baseline">
+                                        
+                                        <div class="col-sm-3">
+                                            
+                                            <input type="text" class="form-control" id="fromdate4" name="fromdate4" placeholder="Min age">
+                                        </div>
+                                        <label for="date" class="px-2">To</label>
+                                        <div class="col-sm-3">
+                                            
+                                            <input type="text" class="form-control" id="todate4" name="todate4" placeholder="Max age">
+                                        </div>
+                                        <label for="text" class="px-2">Years</label>
+                                    </div>
+                
+                                </div>
+                                <h6 class="pt-3">Display Details</h6>
+                                <div class="mb-3 pt-2">
+                                    <label for="notice" class="pb-2">Show</label>
+                                
+                                    <div class="hungry d-flex">
+                                        <div class="selection pe-3">
+                                        <input id="pizza1" name="hungry" type="radio">
+                                        <label for="pizza1">All Candidates</label>
+                                        </div>
+                                        <div class="selection pe-3">
+                                        <input id="burger1" name="hungry" type="radio">
+                                        <label for="burger1">Modified Candidates</label>
+                                        </div>
+                                        
+                                    </div>
+
+                                    
+
+                                </div>
+                                <div class="mb-3 pt-2">
+                                    <label for="notice" class="pb-2">Show only candidates with</label>
+                                
+                                    <div class="hungry d-flex">
+                                        <div class="selection pe-3">
+                                        <input id="pizza2" name="hungry" type="radio">
+                                        <label for="pizza2">Verified mobile no. +</label>
+                                        </div>
+                                        <div class="selection pe-3">
+                                        <input id="burger2" name="hungry" type="radio">
+                                        <label for="burger2">Verified email ID +</label>
+                                        </div>
+                                        <div class="selection pe-3">
+                                            <input id="burger3" name="hungry" type="radio">
+                                            <label for="burger3">Attached resume +</label>
+                                            </div>
+                                        
+                                    </div>
+
+                                    
+
+                                </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+
+                      <div class="my-4 d-flex justify-content-between">
+
+                        <div class="col-8 d-flex align-items-baseline">
+                            <div class="col-sm-2">
+                                <label for="exkey" class="pb-2">Active in</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Days</option>
+                                    <option value="1">1 Days</option>
+                                    <option value="2">3 Days</option>
+                                    <option value="3">7 Days</option>
+                                    <option value="4">15 Days</option>
+                                    <option value="5">30 Days</option>
+                                    <option value="6">2 Months</option>
+                                    <option value="7">3 Months</option>
+                                    <option value="8">6 Months</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-primary">Search Candidates</button>
+
+                      </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/script.js"></script>
+  
+        
+
+</body>
+
+</html>

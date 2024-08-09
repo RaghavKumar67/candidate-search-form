@@ -1,0 +1,74 @@
+
+        .bg-border{
+            border: 3px solid #0d6efd;
+        }
+        .fr{
+            float: right;
+        }
+
+        .mb-m10{
+            margin-bottom: -10px;
+        }
+
+        .form-control{
+            border-radius:0px;
+        }
+
+        #hiddenField {
+            display: none;
+        }
+
+        #hiddenFieldO {
+            display: none;
+        }
+
+
+        .btn-link {
+           text-decoration: none !important;
+        }
+        
+        .btn-link:hover {
+           color: none !important;
+        }
+
+        .btn-check:focus+.btn, .btn:focus {
+            outline: 0;
+            box-shadow: none !important;
+        }
+
+        .accordion-item {
+                background-color: #fff;
+                border-top: 1px solid rgba(0, 0, 0, .125) !important;
+                border-bottom: 1px solid rgba(0, 0, 0, .125) !important;
+            }
+
+            .hungry .selection {
+            margin-bottom: 1em;
+            }
+
+            .hungry .selection label {
+            display: inline-block;
+            width:11em;
+            background-color: #fff;
+            border-radius: 40px;
+            color: gray;
+            border:1px solid gray;
+            padding: 0.5em;
+            cursor: pointer;
+            text-align: center;
+            }
+
+            .hungry .selection label:hover {
+            background-color: #e0f8ff;
+            }
+
+            .hungry .selection input[type=radio] {
+            display: none;
+            }
+
+            .hungry .selection input[type=radio]:checked ~ label {
+            background-color: #a3d6f6;
+            color: #000;
+}
+
+    
