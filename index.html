@@ -22,13 +22,13 @@
                 <form accept="" class="bg-border p-4">                  
                     <div class="mb-3">
                         <div class="d-flex justify-content-between align-items-center">
-                        <label for="key" class="pb-2">Any of the Keywords</label>
+                        <label for="key" class="pb-2">Keywords</label>
                         <div class="form-check form-switch">
                             <input class="form-check-input mt-1" type="checkbox" role="switch" id="flexSwitchCheckDefault">
                             <label class="form-check-label" for="flexSwitchCheckDefault"><small>Boolean off</small></label>
                           </div>
                         </div>
-                        <input type="text" class="tagInput form-control" name="keyword" id="keyword" placeholder="Enter Keywords">
+                        <input type="text" class="tagInput form-control" name="keyword" id="keyword" placeholder="Enter Keywords like Skills, Designation and Company">
                         <div id="tagsContainer"></div>
                         <div class="col-12 mt-2 d-flex align-items-center">
                             <div class="col-5">
@@ -124,7 +124,7 @@
                     </div>
 
                     <div class="mb-2"><label for="annual" class="pb-2 pe-3">Annual Salary</label>
-                    <div class="col-8 d-flex justify-content-between align-items-baseline">
+                    <div class="col-12 d-flex justify-content-between align-items-baseline">
                         
                         <div class="col-sm-3">
                             <select class="form-select" aria-label="Default select example">
@@ -135,7 +135,7 @@
                               </select>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 mx-2">
                             <input type="text" class="form-control" name="lakhs" id="lakhs" placeholder="Lakhs">
                         </div>
                         <div class="col-sm-3">
@@ -150,8 +150,16 @@
                         <label for="exkey" class="pb-2">Candidate's Current Location</label>
                         <input type="text" class="form-control" name="loc" id="loc" placeholder="Enter your location">
                         <div>
-                        <input type="checkbox" name="RememberMe1"> <small>Include Candidates who prefer to relocate to above locations </small> <button type="button" id="showButton" class="btn btn-link px-0"><small>Change preferred location</small></button>
-                            </div>
+                            
+                            <input type="checkbox" name="RememberMe1"> <small>Include Candidates who prefer to relocate to above locations </small> <button type="button" id="showButton2" class="btn btn-link px-0"><small>Change preferred location</small></button>
+
+                        </div>
+
+                        <div class="mb-2" id="hiddenFieldC">
+                            <label for="exkey" class="pb-2">Preferred Location</label>
+                        <input type="text" class="form-control" name="loc1" id="loc1" placeholder="Enter preferred location">
+                        </div>
+
                         <div>
                         <input type="checkbox" name="RememberMe2"> <small>Exclude Candidates who have mentioned Anywhere in...</small>
                         </div>
@@ -160,15 +168,15 @@
                     <div>
                         <div class="mb-2">
                             <div class="col-8 d-flex align-items-baseline">
-                                <div class="col-sm-6">
-                                    <label for="exkey" class="pb-2">Also Search in location within</label>
+                                <div class="col-sm-7">
+                                    <label for="exkey" class="pb-2">Also Search in location within the range of</label>
                                 </div>
                                 <div class="col-sm-3">
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>Select</option>
-                                        <option value="1">Option 1</option>
-                                        <option value="2">Option 2</option>
-                                        <option value="3">Option 3</option>
+                                        <option value="1">50 Kms</option>
+                                        <option value="2">60 Kms</option>
+                                        <option value="3">70 Kms</option>
                                     </select>
                                 </div>
                             </div>
@@ -229,11 +237,13 @@
                                 </div>
 
                                 <div class="mb-3 d-flex justify-content-between align-items-baseline">
-                                    <label for="notice">Employee</label>&nbsp;
-                                    <div class="col-sm-5">
+                                    <div class="col-sm-3">
+                                        <label for="notice">Employee</label>
+                                    </div>
+                                    <div class="col-sm-4">
                                         <input type="text" class="form-control" name="loc1" id="loc1" placeholder="Your Details">
                                     </div>
-                                    <div class="col-sm-5">
+                                    <div class="col-sm-4">
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>Current Employer</option>
                                         <option value="1">Option 1</option>
@@ -244,11 +254,13 @@
                                 </div>
 
                                 <div class="mb-3 d-flex justify-content-between align-items-baseline">
-                                    <label for="notice">Exclude Emp</label>
-                                    <div class="col-sm-5">
+                                    <div class="col-sm-3">
+                                    <label for="notice">Exclude Company</label>
+                                    </div>
+                                    <div class="col-sm-4">
                                         <input type="text" class="form-control" name="loc2" id="loc2" placeholder="Your Details">
                                     </div>
-                                    <div class="col-sm-5">
+                                    <div class="col-sm-4">
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>Current Employer</option>
                                         <option value="1">Option 1</option>
@@ -259,11 +271,13 @@
                                 </div>
 
                                 <div class="mb-3 d-flex justify-content-between align-items-baseline">
+                                    <div class="col-sm-3">
                                     <label for="notice">Designation</label>
-                                    <div class="col-sm-5">
+                                    </div>
+                                    <div class="col-sm-4">
                                         <input type="text" class="form-control" name="loc3" id="loc3" placeholder="Your Details">
                                     </div>
-                                    <div class="col-sm-5">
+                                    <div class="col-sm-4">
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>Current Employer</option>
                                         <option value="1">Option 1</option>
@@ -562,7 +576,9 @@
                             </div>
                         </div>
 
-                        <button type="button" class="btn btn-primary">Search Candidates</button>
+                        <a href="list.html"><button type="button" class="btn btn-primary">
+                            
+                            Search Candidates</button></a>
 
                       </div>
                 </form>
