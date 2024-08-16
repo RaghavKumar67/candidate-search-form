@@ -24,6 +24,17 @@
             }
         });
 
+        document.getElementById('showButton2').addEventListener('click', function() {
+            const hiddenFieldO = document.getElementById('hiddenFieldC');
+
+            // Toggle visibility
+            if (hiddenFieldO.style.display === 'none' || hiddenFieldO.style.display === '') {
+                hiddenFieldO.style.display = 'block'; // Show the input field
+            } else {
+                hiddenFieldO.style.display = 'none'; // Hide the input field (if needed)
+            }
+        });
+
         document.querySelector('.tagInput').addEventListener('keydown', function(event) {
             if (event.key === ',') {
                 event.preventDefault(); // Prevent the form submission or other default actions
