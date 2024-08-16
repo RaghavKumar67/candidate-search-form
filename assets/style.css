@@ -89,6 +89,11 @@
             background-color: #e0f8ff;
             }
 
+                .sticky-col{
+                    position: sticky;
+                    top: 10px;
+                    height: 360px;
+                }
             .hungry .selection input[type=radio] {
             display: none;
             }
