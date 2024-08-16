@@ -19,49 +19,209 @@
 
     <div class="container mt-4">
         <div class="row">
-            <div class="col-lg-3">
+          <div class="col-lg-3">
               
-                <div class="input-group align-items-center">
-                  <i class="bi bi-filter h4 me-3"></i>
-                  <h5>Filter</h5>
-                </div>
-
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Keywords
-                      </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body"></div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Location
-                      </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body"></div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Experience (Years)
-                      </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body"></div>
-                    </div>
-                  </div>
-                </div>
-              
+            <div class="input-group align-items-center">
+              <i class="bi bi-filter h4 me-3"></i>
+              <h5>Filter</h5>
             </div>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Keywords
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label" for="flexCheckChecked">
+                        HTML
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        CSS
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        CRM
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Location
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Chennai
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Bangalore
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Mumbai
+                      </label>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Experience (Years)
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        1 year
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        2 -5 years
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        6 -10 years
+                      </label>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree1" aria-expanded="false" aria-controls="flush-collapseThree1">
+                    Salary
+                  </button>
+                </h2>
+                <div id="flush-collapseThree1" class="accordion-collapse collapse show" aria-labelledby="flush-headingThree1" data-bs-parent="#accordionFlushExample1">
+                  <div class="accordion-body">
+
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        3 LPA
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        5 -7 LPA
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Above 7 LPA
+                      </label>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+        </div>
             <div class="col-lg-9">
-                <div class="row gy-4">
+              <div class="row gy-4">
+                <div class="col-12 d-block">
+                  
+                    <div class="row d-flex align-items-center">
+
+                      <div class="col-6 d-flex">
+                      <div class="col-sm-2">
+                        <label for="exkey" class="pb-2">Active in</label>
+                      </div>
+                      <div class="col-sm-2">
+                        <select class="form-select form-select-sm" aria-label="Default select example">
+                            <option selected>Days</option>
+                            <option value="1">1 Days</option>
+                            <option value="2">3 Days</option>
+                            <option value="3">7 Days</option>
+                            <option value="4">15 Days</option>
+                            <option value="5">30 Days</option>
+                            <option value="6">2 Months</option>
+                            <option value="7">3 Months</option>
+                            <option value="8">6 Months</option>
+                        </select>
+                        </div>
+                      </div>
+
+                      <div class="col-6 d-flex justify-content-end">
+                        <div class="col-sm-2">
+                          <label for="exkey" class="pb-2">Show</label>
+                        </div>
+                        <div class="col-sm-2 me-3">
+                          <select class="form-select form-select-sm" aria-label="Default select example">
+                              <option selected>40</option>
+                              <option value="1">20</option>
+                              <option value="2">30</option>
+                              <option value="4">70</option>
+                              <option value="5">100</option>
+                              
+                          </select>
+                          </div>
+
+                          <nav aria-label="Page navigation example">
+                            <ul class="pagination pagination-sm">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    
+                <div class="row my-4">
                     <div class="col-12 d-block">
                       <div class="card widget-card border-light shadow-sm">
                         <div class="card-header text-bg-primary"></div>
@@ -117,69 +277,140 @@
                                     <button class="btn btn-primary col-sm-4" type="button">Call Candidate</button>
                                   </div>
                             </div>
-                            
-                            <!-- <div class="col-12 text-center">
+                            <div class="col-10 mx-auto">
+                              <div class="row g-0">
                                 
-                                
-                                <div>
-                                    <span class="badge text-bg-primary">HTML</span>
-                                    <span class="badge text-bg-primary">SCSS</span>
-                                    <span class="badge text-bg-primary">Javascript</span>
-                                    <span class="badge text-bg-primary">React</span>
-                                    <span class="badge text-bg-primary">Vue</span>
-                                    <span class="badge text-bg-primary">Angular</span>
-                                    <span class="badge text-bg-primary">UI</span>
-                                    <span class="badge text-bg-primary">UX</span>
+                                <div class="col-5 col-md-3 bg-light border-bottom border-white border-3">
+                                  <div class="p-2">Current</div>
                                 </div>
-                               
-                            </div> -->
+                                <div class="col-7 col-md-9 bg-light border-start border-bottom border-white border-3">
+                                  <div class="p-2">Project Manager at TCS</div>
+                                </div>
+                                <div class="col-5 col-md-3 bg-light border-bottom border-white border-3">
+                                  <div class="p-2">Education</div>
+                                </div>
+                                <div class="col-7 col-md-9 bg-light border-start border-bottom border-white border-3">
+                                  <div class="p-2">B.E Computer Science</div>
+                                </div>
+                                <div class="col-5 col-md-3 bg-light border-bottom border-white border-3">
+                                  <div class="p-2">Preferred Locations </div>
+                                </div>
+                                <div class="col-7 col-md-9 bg-light border-start border-bottom border-white border-3">
+                                  <div class="p-2">Chennai, Coimbatore, Bangalore, Mumbai, Delhi</div>
+                                </div>
+                                <div class="col-5 col-md-3 bg-light border-bottom border-white border-3">
+                                  <div class="p-2">May Also Know</div>
+                                </div>
+                                <div class="col-7 col-md-9 bg-light border-start border-bottom border-white border-3">
+                                  <div class="p-2">CRUD Operation, Salesforce, CRM, ChatGpt</div>
+                                </div>
+                              
+                              </div>
+                                  </div>
+                           
                             
                         </div>
+                        <button type="button" class="btn btn-link d-block px-0">20 Similar Profiles</button>
                         </div>
-                  </div>
+                        
+                    </div>
                   
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="card widget-card border-light shadow-sm">
-              <div class="card-body d-flex align-items-center justify-content-center">
-                <div class="col-10">
-            <div class="row g-0">
-              
-              <div class="col-5 col-md-3 bg-light border-bottom border-white border-3">
-                <div class="p-2">Current</div>
+                </div>
+                <div class="row gy-4">
+                  <div class="col-12 d-block">
+                    <div class="card widget-card border-light shadow-sm">
+                      <div class="card-header text-bg-primary"></div>
+
+                      <div class="card-body align-items-center justify-content-between">
+                        <div class="checkbox-lg">
+                        <input type="checkbox"  class="form-check-input" name="RememberMe1" width="20" height="20" class="pull-right">
+                      </div>
+                          <div class="col-8 mx-auto">
+                            
+                              <div class="text-center mb-3">
+                                  <img src="https://upload-pro-heyuan-fashionphoto.oss-accelerate.aliyuncs.com/upload/page/models4/chic-mexican-male-model-a-professional-pose-in-front-of-artistic-building-by-andrei-kolkoutine.png?x-oss-process=image/resize,w_716,m_lfit" class="img-fluid rounded-circle w-25" alt="Luna John">
+                                </div>
+                                <h5 class="text-center mb-1">Joseph K</h5>
+                                <p class="text-center text-secondary mb-1">Project Manager</p>
+                                <div class="my-3 d-flex justify-content-center">
+
+                                  <h6 class="mb-1 me-2">
+                                      <span class="bii bi-building-fill-gear"></span>
+                                      5 years
+                                    </h6>
+
+                                    <h6 class="mb-1 me-2">
+                                      <span class="bii bi-mortarboard-fill"></span>
+                                      11 LPA
+                                    </h6>
+
+                                  
+                                      <h6 class="mb-1">
+                                        <span class="bii bi-geo-alt-fill"></span>
+                                        Bangalore
+                                      </h6>
+
+                                  
+
+                                    
+
+
+                              </div>
+                              <p class="text-center">Joseph is a seasoned and results-driven Project Manager who brings experience and expertise to project management.</p>
+                              <div class="mb-2 text-center">
+                                <span class="badge text-bg-primary">HTML</span>
+                                <span class="badge text-bg-primary">SCSS</span>
+                                <span class="badge text-bg-primary">Javascript</span>
+                                <span class="badge text-bg-primary">React</span>
+                                <span class="badge text-bg-primary">Vue</span>
+                                <span class="badge text-bg-primary">Angular</span>
+                                <span class="badge text-bg-primary">UI</span>
+                                <span class="badge text-bg-primary">UX</span>
+                            </div>
+                                <div class="d-flex my-3 gy-2 justify-content-center">
+                                  <button class="btn btn-outline-primary col-sm-4 mx-2" type="button">View Phone Number</button>
+                                  <button class="btn btn-primary col-sm-4" type="button">Call Candidate</button>
+                                </div>
+                          </div>
+                          <div class="col-10 mx-auto">
+                            <div class="row g-0">
+                              
+                              <div class="col-5 col-md-3 bg-light border-bottom border-white border-3">
+                                <div class="p-2">Current</div>
+                              </div>
+                              <div class="col-7 col-md-9 bg-light border-start border-bottom border-white border-3">
+                                <div class="p-2">Project Manager at ZOHO</div>
+                              </div>
+                              <div class="col-5 col-md-3 bg-light border-bottom border-white border-3">
+                                <div class="p-2">Education</div>
+                              </div>
+                              <div class="col-7 col-md-9 bg-light border-start border-bottom border-white border-3">
+                                <div class="p-2">M.E Computer Science</div>
+                              </div>
+                              <div class="col-5 col-md-3 bg-light border-bottom border-white border-3">
+                                <div class="p-2">Preferred Locations </div>
+                              </div>
+                              <div class="col-7 col-md-9 bg-light border-start border-bottom border-white border-3">
+                                <div class="p-2">Chennai, Coimbatore, Bangalore, Mumbai, Delhi</div>
+                              </div>
+                              <div class="col-5 col-md-3 bg-light border-bottom border-white border-3">
+                                <div class="p-2">May Also Know</div>
+                              </div>
+                              <div class="col-7 col-md-9 bg-light border-start border-bottom border-white border-3">
+                                <div class="p-2">CRUD Operation, Salesforce, CRM, ChatGpt</div>
+                              </div>
+                            
+                            </div>
+                                </div>
+                         
+                          
+                      </div>
+                      <button type="button" class="btn btn-link d-block px-0">20 Similar Profiles</button>
+                      </div>
+                      
+                  </div>
+                
               </div>
-              <div class="col-7 col-md-9 bg-light border-start border-bottom border-white border-3">
-                <div class="p-2">Project Manager at TCS</div>
-              </div>
-              <div class="col-5 col-md-3 bg-light border-bottom border-white border-3">
-                <div class="p-2">Education</div>
-              </div>
-              <div class="col-7 col-md-9 bg-light border-start border-bottom border-white border-3">
-                <div class="p-2">B.E Computer Science</div>
-              </div>
-              <div class="col-5 col-md-3 bg-light border-bottom border-white border-3">
-                <div class="p-2">Preferred Locations </div>
-              </div>
-              <div class="col-7 col-md-9 bg-light border-start border-bottom border-white border-3">
-                <div class="p-2">Chennai, Coimbatore, Bangalore, Mumbai, Delhi</div>
-              </div>
-              <div class="col-5 col-md-3 bg-light border-bottom border-white border-3">
-                <div class="p-2">May Also Know</div>
-              </div>
-              <div class="col-7 col-md-9 bg-light border-start border-bottom border-white border-3">
-                <div class="p-2">CRUD Operation, Salesforce, CRM, ChatGpt</div>
-              </div>
-            
-            </div>
-          </div>
-          </div>
-          <!-- <button class="btn col-sm-4 mx-2" type="button">More Profiles like this</button> -->
-          <button type="button" class="btn btn-link d-block px-0">20 Similar Profiles</button>
-        </div>
-        
-        </div>
-        </div>
     </div>
   
   </section>
