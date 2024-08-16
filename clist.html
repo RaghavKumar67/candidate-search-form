@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      .checkbox-lg .form-check-input{
+        scale: 1.4;
+      }
+
+      .blr{
+        border-left: 1px solid #d8d2d2;
+        border-right: 1px solid #d8d2d2;
+      }
+
+      .f14{
+        font-size: 14px;
+      }
+
+      .bi-reply-fill::before {
+        transform: scaleX(-1) !important;
+        margin-bottom: 50px;
+        }
+
+        .bi-file-earmark-plus-fill::before {
+            margin-bottom: 50px;
+        }
+
+        .bi-envelope-fill::before{
+          margin-bottom: 50px;
+        }
+    </style>
+    </head>
+   <body>
+    
+    
+<section class="bg-light py-3 py-md-5 py-xl-8">
+    
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-3">
+              
+                <div class="input-group align-items-center">
+                  <i class="bi bi-filter h4 me-3"></i>
+                  <h5>Filter</h5>
+                </div>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Keywords
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                          <label class="form-check-label" for="flexCheckChecked">
+                            HTML
+                          </label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            CSS
+                          </label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            CRM
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Location
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                          <label class="form-check-label" for="flexCheckChecked">
+                            Chennai
+                          </label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Bangalore
+                          </label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Mumbai
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Experience (Years)
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            1 year
+                          </label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            2 -5 years
+                          </label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            6 -10 years
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree1">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree1" aria-expanded="false" aria-controls="flush-collapseThree1">
+                        Salary
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree1" class="accordion-collapse collapse show" aria-labelledby="flush-headingThree1" data-bs-parent="#accordionFlushExample1">
+                      <div class="accordion-body">
+
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            3 LPA
+                          </label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            5 -7 LPA
+                          </label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Above 7 LPA
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+            </div>
+
+
+            <!-- Work here -->
+
+
+            <div class="col-lg-9">
+
+              <div class="row gy-4">
+                <div class="col-12 d-block">
+                  
+                    <div class="row d-flex align-items-center">
+
+                      <div class="col-6 d-flex">
+                      <div class="col-sm-2">
+                        <label for="exkey" class="pb-2">Active in</label>
+                      </div>
+                      <div class="col-sm-2">
+                        <select class="form-select form-select-sm" aria-label="Default select example">
+                            <option selected>Days</option>
+                            <option value="1">1 Days</option>
+                            <option value="2">3 Days</option>
+                            <option value="3">7 Days</option>
+                            <option value="4">15 Days</option>
+                            <option value="5">30 Days</option>
+                            <option value="6">2 Months</option>
+                            <option value="7">3 Months</option>
+                            <option value="8">6 Months</option>
+                        </select>
+                        </div>
+                      </div>
+
+                      <div class="col-6 d-flex justify-content-end">
+                        <div class="col-sm-2">
+                          <label for="exkey" class="pb-2">Show</label>
+                        </div>
+                        <div class="col-sm-2 me-3">
+                          <select class="form-select form-select-sm" aria-label="Default select example">
+                              <option selected>40</option>
+                              <option value="1">20</option>
+                              <option value="2">30</option>
+                              <option value="4">70</option>
+                              <option value="5">100</option>
+                              
+                          </select>
+                          </div>
+
+                          <nav aria-label="Page navigation example">
+                            <ul class="pagination pagination-sm">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div></div>
+                    </div>
+                    
+                <div class="row my-4">
+                    <div class="col-12 d-block">
+                      <div class="card widget-card border-light shadow-sm">
+                        <div class="card-body align-items-center justify-content-between">
+                        <div class="row d-flex">
+
+                        <div class="col-7 d-flex">
+                          <div class="checkbox-lg mt-1 me-3">
+                            <input type="checkbox"  class="form-check-input" name="RememberMe1" width="20" height="20" class="pull-right">
+                          </div>
+
+                          <div class="col-12 d-block">
+                          <h4>Joseph K</h4>
+                          
+                          <div class="mt-1 d-inline-flex">
+                            <p class="mb-1 me-2 text-muted">
+                              <small><span class="bii bi-building-fill-gear"></span>
+                                7 years</small>
+                              </p>
+                              <p class="mb-1 mx-3 text-muted">
+                                <small><span class="bii bi-wallet-fill"></span>
+                                15 LPA</small>
+                              </p>
+                                <p class="mb-1 text-muted">
+                                  <small><span class="bii bi-geo-alt-fill"></span>
+                                Chennai</small>
+                              </p>
+                          </div>
+                          <div class="row d-flex mt-3">
+
+
+                            <div class="col-3">
+                              <p class="text-muted">Current</p>
+                            </div>
+                            <div class="col-7">
+                              <p>Project Manager at TCS</p>
+                            </div>
+
+                          </div>
+
+                          <div class="row d-flex">
+
+
+                            <div class="col-3">
+                              <p class="text-muted">Education</p>
+                            </div>
+                            <div class="col-7">
+                              <p>B.E Computer Science, Anna University Chennai</p>
+                            </div>
+
+                          </div>
+
+                          <div class="row d-flex">
+                            
+                            <div class="col-3">
+                              
+                              
+                              <p class="text-muted">Pref Location</p>
+                            </div>
+                            <div class="col-7">
+                              
+                              
+                              <p>Chennai, Bangalore, Mumbai</p>
+                            </div>
+
+                          </div>
+
+                          <div class="row d-flex">
+
+                            
+                            <div class="col-3">
+                              
+                              
+                              <p class="text-muted">Key Skills</p>
+                            </div>
+                            <div class="col-7">
+                              
+                              
+                              <p>Java, CRM, Salesforce</p>
+                            </div>
+
+                          </div>
+
+                          <div class="row d-flex">
+
+                            
+                            <div class="col-3">
+                              
+                              
+                              <p class="text-muted">May Also Know</p>
+                            </div>
+                            <div class="col-7">
+                              
+                              
+                              <p>Zoho CRM</p>
+                            </div>
+
+                          </div>
+                          <button type="button" class="btn btn-link px-0 text-decoration-none">20 Similar Profiles</button>
+
+                          </div>
+
+
+                        </div>
+                        <div class="col-4 justify-content-center blr">
+                          <div class="text-center mb-2">
+                            <img src="https://upload-pro-heyuan-fashionphoto.oss-accelerate.aliyuncs.com/upload/page/models4/chic-mexican-male-model-a-professional-pose-in-front-of-artistic-building-by-andrei-kolkoutine.png?x-oss-process=image/resize,w_716,m_lfit" class="img-fluid rounded-circle w-25" alt="Luna John">
+                          </div>
+                          <p class="text-center text-secondary mb-1">Joseph is a seasoned and results-driven Project Manager</p>
+                          <div class="text-center mt-3 d-block justify-content-center">
+                          <button class="btn btn-outline-primary col-sm-7 mx-auto my-2 d-block f14" type="button">View Phone Number</button>
+                          <button class="btn btn-primary col-sm-7 mx-auto d-block mb-2 f14" type="button"><i class="bi bi-telephone-fill me-2"></i>Call Candidate</button>
+                          <small>Verified Phone & Email</small>
+                          <div class="d-flex mt-4 justify-content-center">
+                            <a href="#" class="text-primary text-decoration-none">Comment</a>
+                            <p class="ms-3 text-muted">|</p>
+                            <a href="#" class="mb-1 mx-3 text-primary text-decoration-none">
+                              
+                              <i class="bi bi-bookmark"></i>
+                              Save
+                            </a>
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class="col-1 d-block text-center">
+                          <i class="bi bi-file-earmark-plus-fill d-block h5 text-muted"></i>
+                          <i class="bi bi-envelope-fill d-block h5 text-muted"></i>
+                          <i class="bi bi-reply-fill d-block h5 text-muted icon-flipped"></i>
+                          <i class="bi bi-clock d-block h5 text-muted"></i>
+                        </div>
+
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+                  <div class="col-12 d-block">
+                    <div class="card widget-card border-light shadow-sm">
+                      <div class="card-body align-items-center justify-content-between">
+                      <div class="row d-flex">
+
+                      <div class="col-7 d-flex">
+                        <div class="checkbox-lg mt-1 me-3">
+                          <input type="checkbox"  class="form-check-input" name="RememberMe1" width="20" height="20" class="pull-right">
+                        </div>
+
+                        <div class="col-12 d-block">
+                        <h4>Diksha</h4>
+                        
+                        <div class="mt-1 d-inline-flex">
+                          <p class="mb-1 me-2 text-muted">
+                            <small><span class="bii bi-building-fill-gear"></span>
+                              5 years</small>
+                            </p>
+                            <p class="mb-1 mx-3 text-muted">
+                              <small><span class="bii bi-wallet-fill"></span>
+                              10 LPA</small>
+                            </p>
+                              <p class="mb-1 text-muted">
+                                <small><span class="bii bi-geo-alt-fill"></span>
+                              Chennai</small>
+                            </p>
+                        </div>
+                        <div class="row d-flex mt-3">
+
+
+                          <div class="col-3">
+                            <p class="text-muted">Current</p>
+                          </div>
+                          <div class="col-7">
+                            <p>Project Manager at IBM</p>
+                          </div>
+
+                        </div>
+
+                        <div class="row d-flex">
+
+
+                          <div class="col-3">
+                            <p class="text-muted">Education</p>
+                          </div>
+                          <div class="col-7">
+                            <p>M.E Computer Science, Anna University Chennai</p>
+                          </div>
+
+                        </div>
+
+                        <div class="row d-flex">
+                          
+                          <div class="col-3">
+                            
+                            
+                            <p class="text-muted">Pref Location</p>
+                          </div>
+                          <div class="col-7">
+                            
+                            
+                            <p>Chennai, Bangalore, Mumbai</p>
+                          </div>
+
+                        </div>
+
+                        <div class="row d-flex">
+
+                          
+                          <div class="col-3">
+                            
+                            
+                            <p class="text-muted">Key Skills</p>
+                          </div>
+                          <div class="col-7">
+                            
+                            
+                            <p>Java, CRM, Salesforce</p>
+                          </div>
+
+                        </div>
+
+                        <div class="row d-flex">
+
+                          
+                          <div class="col-3">
+                            
+                            
+                            <p class="text-muted">May Also Know</p>
+                          </div>
+                          <div class="col-7">
+                            
+                            
+                            <p>Zoho CRM, Hubstaff</p>
+                          </div>
+
+                        </div>
+                        <button type="button" class="btn btn-link px-0 text-decoration-none">20 Similar Profiles</button>
+
+                        </div>
+
+
+                      </div>
+                      <div class="col-4 justify-content-center blr">
+                        <div class="text-center mb-2">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp" class="img-fluid rounded-circle w-25" alt="Luna John">
+                        </div>
+                        <p class="text-center text-secondary mb-1">Diksha is a versatile and a determined Project Manager</p>
+                        <div class="text-center mt-3 d-block justify-content-center">
+                        <button class="btn btn-outline-primary col-sm-7 mx-auto my-2 d-block f14" type="button">View Phone Number</button>
+                        <button class="btn btn-primary col-sm-7 mx-auto d-block mb-2 f14" type="button"><i class="bi bi-telephone-fill me-2"></i>Call Candidate</button>
+                        <small>Verified Phone & Email</small>
+                        <div class="d-flex mt-4 justify-content-center">
+                          <a href="#" class="text-primary text-decoration-none">Comment</a>
+                          <p class="ms-3 text-muted">|</p>
+                          <a href="#" class="mb-1 mx-3 text-primary text-decoration-none">
+                            
+                            <i class="bi bi-bookmark"></i>
+                            Save
+                          </a>
+                        </div>
+                      </div>
+                      </div>
+
+                      <div class="col-1 d-block text-center">
+                        <i class="bi bi-file-earmark-plus-fill d-block h5 text-muted"></i>
+                        <i class="bi bi-envelope-fill d-block h5 text-muted"></i>
+                        <i class="bi bi-reply-fill d-block h5 text-muted icon-flipped"></i>
+                        <i class="bi bi-clock d-block h5 text-muted"></i>
+                      </div>
+
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+  
+  </section>
+  
+    <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+   </body>
+    </html>
+
+
+
+
+
+
