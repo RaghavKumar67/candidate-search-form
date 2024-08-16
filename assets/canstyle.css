@@ -103,9 +103,5 @@ body{
     padding: 8px 22px;
 }
 
-.sticky-col{
-    position: sticky;
-    top: 10px;
-    height: 360px;
-}
-}
+
+
