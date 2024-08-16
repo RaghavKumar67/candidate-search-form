@@ -22,6 +22,10 @@
             display: none;
         }
 
+        #hiddenFieldC {
+            display: none;
+        }
+
 
         .btn-link {
            text-decoration: none !important;
